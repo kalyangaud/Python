@@ -9,7 +9,6 @@ A=[]
 for i in range(n):
     row=list(map(float,input(f"enter the {i+1}th row: ").split()))
     A.append(row)
-
 A=np.array(A,dtype=float)
 print(f"the augmented matrix is \n {A}")
 

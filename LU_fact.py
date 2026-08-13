@@ -1,10 +1,8 @@
 import pandas as pd
 import numpy as np
-
+np.set_printoptions(suppress=True,precision=3)
 print("LU FACTORIZATION METHOD OF SOLVING SYSTEM OF LINEAR EQUATION")
-
 n = int(input("Enter the number of variables in the system: "))
-
 A = []
 for i in range(0, n):     
     row = list(map(float,
@@ -13,8 +11,6 @@ for i in range(0, n):
 
 A = np.array(A, dtype=float)
 print(f"The augmented matrix is\n{A}\n")
-
-
 C = A[:, :-1]
 B = A[:, -1]
 

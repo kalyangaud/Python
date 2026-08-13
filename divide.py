@@ -1,5 +1,7 @@
 # Newton's Divided Difference Interpolation Method
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 n = int(input("Enter the number of data points: "))
 
 x = []
